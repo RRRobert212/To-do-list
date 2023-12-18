@@ -16,7 +16,8 @@ class Task{
     void setDescr(const std::string& descr);
     void setDate(const std::string& date);
     void setPrio(int prio);
-    void complete(bool complete);
+    void complete();
+    std::string getName() const;
 
 
     void display() const;

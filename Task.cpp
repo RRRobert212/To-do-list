@@ -1,3 +1,5 @@
+//Task.cpp
+
 #include "Task.h"
 #include <iostream>
 
@@ -25,10 +27,13 @@ void Task::setPrio(int prio){
     priority = prio;
 }
 
-void Task::complete(bool complete){
-    isComplete = complete;
+void Task::complete(){
+    isComplete = true;
 }
 
+std::string Task::getName() const{
+    return name;
+}
 // display task by printing properties
 
 void Task::display() const {
